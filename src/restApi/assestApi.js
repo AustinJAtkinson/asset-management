@@ -1,4 +1,4 @@
-const ASSET_ENDPOINT = 'https://crudcrud.com/api/89c6d20331244434a98c7164d6773695/assets'
+const ASSET_ENDPOINT = 'https://crudcrud.com/api/e7888a5c5f8e4dd0b7aef81d835b1546/assets'
 
 class AssetApi {
     get = async() =>{

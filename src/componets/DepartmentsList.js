@@ -4,7 +4,7 @@ import { assetApi } from "../restApi/assestApi";
 import Department from "./Department";
 
 function DepartmentsList(){
-    const [departments, setDepartments] = useState();
+    const [departments, setDepartments] = useState([{name: '', _id: '', assets:[]}]);
 
     useEffect(() => {
         fetchDepartments();
@@ -35,7 +35,7 @@ function DepartmentsList(){
         <>
             <NewDepartmentForm addNewDepartment={addNewDepartment} />
             <div>
-                {departments?.map((department) => (
+                {departments.map((department) => (
                     <Department
                         department={department}
                         key={department._id}

@@ -19,8 +19,8 @@ const Department = ({department, updateDepartment, deleteDepartment}) => {
     }
 
     const Assets = () => (
-        <p>
-            {department.assets?.map((asset, index) => (
+        <>
+            {department.assets.map((asset, index) => (
                 <div className="row" key={index}>
                     <div className="col">
                     <span><strong>Name: </strong>{asset.name}</span>
@@ -35,7 +35,7 @@ const Department = ({department, updateDepartment, deleteDepartment}) => {
             ))
 
             }
-        </p>
+        </>
     )
 
     return(
