@@ -46,7 +46,7 @@ const Department = ({department, updateDepartment, deleteDepartment}) => {
             </div>
             <div className="card-body">
                 <NewAssetForm addNewAsset={addAsset}/>
-                {assets({ assets, departmentId: department._id, deleteAsset})}
+                {assets()}
             </div>
         </div>
     )

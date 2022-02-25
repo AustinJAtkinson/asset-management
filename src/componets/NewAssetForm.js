@@ -29,7 +29,7 @@ export const NewAssetForm = ({addNewAsset}) => {
 
     return(
         <div>
-            <h4>Add a new room</h4>
+            <h4>Add a new asset</h4>
             <form onSubmit={onSubmit}>
                 <div className="row">
                     <div className="col">
