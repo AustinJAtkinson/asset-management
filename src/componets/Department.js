@@ -18,7 +18,7 @@ const Department = ({department, updateDepartment, deleteDepartment}) => {
         updateDepartment(updatedDepartment);
     }
 
-    const assets = () => (
+    const Assets = () => (
         <p>
             {department.assets?.map((asset, index) => (
                 <div className="row" key={index}>
@@ -46,7 +46,7 @@ const Department = ({department, updateDepartment, deleteDepartment}) => {
             </div>
             <div className="card-body">
                 <NewAssetForm addNewAsset={addAsset}/>
-                {assets()}
+                <Assets/>
             </div>
         </div>
     )
