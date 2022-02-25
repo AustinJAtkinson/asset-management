@@ -1,10 +1,9 @@
-import DepartmentsList from './componets/DepartmentsList.js'
-
+import DepartmentsList from "./componets/DepartmentsList.js";
 
 function App() {
   return (
     <div className="container">
-      <DepartmentsList/>
+      <DepartmentsList />
     </div>
   );
 }
